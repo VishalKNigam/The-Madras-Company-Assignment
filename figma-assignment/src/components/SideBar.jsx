@@ -7,7 +7,7 @@ import ForwardArrowSvg from "../assets/forwardArrow.svg";
 import styled from "styled-components"
 const SideBar = () => {
   return (
-    <Container>
+    <SideContainer>
       {/* Using the imported SVG directly */}
       <div>
         <img src={TopSvg} alt="TopSvg" />
@@ -29,18 +29,17 @@ const SideBar = () => {
         <img src={ForwardArrowSvg} alt="ForwardArrowSvg" />
 
       </div>
-    </Container>
+    </SideContainer>
   );
 };
 
 export default SideBar;
 
-const Container = styled.div`
+const SideContainer = styled.div`
   background-color: #141414;
   display: flex;
   flex-direction: column;
   width: 5%;
-  padding: 2%;
   height: 100vh;
   align-items: center;
   div{

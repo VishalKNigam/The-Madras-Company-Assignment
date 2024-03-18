@@ -4,6 +4,7 @@ import Box from '../components/Box';
 import starSvg from "../assets/star.svg";
 import bulbSvg from "../assets/bulb.svg";
 import kurtiSvg from "../assets/kurti.svg";
+import Search from '../components/Search';
 
 const Welcome = () => {
     return (
@@ -16,9 +17,12 @@ const Welcome = () => {
             </SecondHeading>
             <BoxContainer>
                 <Box content={"Trending smart watches 2024"} imageUrl={starSvg} />
-                <Box content={"Portable vacuum cleaner"} imageUrl={bulbSvg}/>
-                <Box content={"Kurti sets under 600"} imageUrl={kurtiSvg}/>
+                <Box content={"Portable vacuum cleaner"} imageUrl={bulbSvg} />
+                <Box content={"Kurti sets under 600"} imageUrl={kurtiSvg} />
             </BoxContainer>
+            <SearchContainer>
+                <Search />
+            </SearchContainer>
         </div>
     )
 }
@@ -42,7 +46,14 @@ const SecondHeading = styled.div`
 const BoxContainer = styled.div`
     display: flex;
     margin-left: 110px;
-    margin-top: 60px;
-    
-
+    margin-top: 35px;
+`
+const SearchContainer = styled.div`
+    position: relative;
+    margin-left: 213px;
+    background-color: #161516;
+    padding: 5px;
+    top: 10%;
+    width: 80%;
+    border-radius: 54px;
 `

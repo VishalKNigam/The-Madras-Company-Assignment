@@ -22,13 +22,13 @@ const BoxContainer = styled.div`
     border-radius: 22.09px;
     margin: 20px;
     width: 100%;
-    height: 215px;
+    height: 125px;
     font-size: 25px;
     div:nth-child(2){
         position: sticky;
-        top: 85%;
-        left: 90%;
-        padding: 6px;
+        top: 100%;
+        left: 100%;
+        padding: 15px;
         background-color: #170B1C;
         width: 20px;
         height: 20px;
