@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+    <!-- Background -->
+    <rect x="0" y="0" width="800" height="600" fill="#87CEEB" />
+    <!-- Mountains -->
+    <path fill="#4169E1" d="M0 400 L200 100 L400 400 Z" />
+    <path fill="#1E90FF" d="M200 400 L400 150 L600 400 Z" />
+    <path fill="#00BFFF" d="M400 400 L600 200 L800 400 Z" />
+    <!-- Clouds -->
+    <g fill="blue" opacity="1">
+      <circle cx="200" cy="100" r="30">
+        <animate attributeName="cx" values="200;220;200" dur="10s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="500" cy="80" r="25">
+        <animate attributeName="cx" values="500;520;500" dur="8s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="700" cy="150" r="35">
+        <animate attributeName="cx" values="700;720;700" dur="12s" repeatCount="indefinite" />
+      </circle>
+    </g>
+    <!-- Clock -->
+    <g transform="scale(0.5) translate(930, 300)">
+      <!-- Clock Body -->
+      <circle cx="100" cy="100" r="90" fill="#333" />
+      <!-- Clock Pointer -->
+      <line x1="100" y1="100" x2="100" y2="20" stroke="#FFD700" stroke-width="5">
+        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 100 100" to="360 100 100" dur="5s" repeatCount="indefinite" />
+      </line>
+    </g>
+    <!-- Laptop -->
+    <g transform="scale(0.5) translate(200, 380)">
+      <!-- Base -->
+      <rect x="32" y="352" width="448" height="80" rx="16" fill="#333">
+        <animate attributeName="y" values="352;342;352" dur="5s" repeatCount="indefinite" />
+      </rect>
+      <!-- Screen -->
+      <rect x="64" y="96" width="384" height="256" rx="32" fill="#444">
+        <animate attributeName="y" values="96;106;96" dur="5s" repeatCount="indefinite" />
+      </rect>
+      <!-- Keyboard -->
+      <rect x="48" y="376" width="416" height="32" rx="8" fill="#222">
+        <animate attributeName="y" values="376;386;376" dur="5s" repeatCount="indefinite" />
+      </rect>
+      <!-- Screen Stand -->
+      <rect x="224" y="96" width="64" height="16" fill="#444">
+        <animate attributeName="y" values="96;106;96" dur="5s" repeatCount="indefinite" />
+      </rect>
+      <!-- Logo -->
+      <circle cx="256" cy="136" r="16" fill="#333">
+        <animate attributeName="cy" values="136;126;136" dur="5s" repeatCount="indefinite" />
+      </circle>
+      <!-- Webcam -->
+      <circle cx="256" cy="176" r="8" fill="#222">
+        <animate attributeName="cy" values="176;186;176" dur="5s" repeatCount="indefinite" />
+      </circle>
+    </g>
+  </svg>
+  

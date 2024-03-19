@@ -20,7 +20,7 @@ const Header = () => {
                     <li>About</li>
                     <li>Contact</li>
                 </ul >
-                <ul className={`flex md:hidden gap-10 w-[30%] flex-col
+                <ul className={`flex md:hidden gap-10 w-[100%] flex-col
                  h-screen text-white duration-300
                 fixed bg-[black] top-[102px] 
                 ${toggle ? `left-[0%]` : `left-[-100%]`}`}>
